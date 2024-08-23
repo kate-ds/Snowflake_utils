@@ -8,7 +8,8 @@ snowflake_utils_example.ipynb  - Snowflake utils usage example
 
 ## General utils
 
-Contains slack utils for model training notifitations like 
+Contains:  
+- slack utils for model training notifitations like 
 
 ```
 [Model_name] Version
@@ -95,6 +96,26 @@ max Model GBT : 172.68
 max Model Rule : 180.287
 
 upload_data
-Data uploaded to DB.SCHEMA.ML_MODEL_DATA - 28042 rows```
+Data uploaded to DB.SCHEMA.ML_MODEL_DATA - 28042 rows
+```
 
-or simple text message to slack-channel
+- or simple text message to slack-channel
+```
+[Model_name] version:
+Prediction at: 2024-06-06 01:14:08.656143+00:00
+Export data shape: (11520, 11)
+Export data min date: 2024-05-30 00:00:27.795000+00:00
+Export data max date: 2024-06-06 01:12:29.304000+00:00
+sum Model GBT : 893646.341
+sum Model Rule : 875314.664
+min Model GBT : 24.519
+min Model Rule : 28.247
+mean Model GBT : 77.573
+mean Model Rule : 75.982
+max Model GBT : 292.703
+max Model Rule : 122.834
+Null values: 0
+Data uploaded to DB.SCHEMA.ML_MODEL_DATA - 11520 rows
+```
+
+
